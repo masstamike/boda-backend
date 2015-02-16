@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Family:</strong>
+  <%= @rsvp.family %>
+</p>
+
+<p>
+  <strong>Coming:</strong>
+  <%= @rsvp.coming %>
+</p>
+
+<p>
+  <strong>Song:</strong>
+  <%= @rsvp.song %>
+</p>
+
+<p>
+  <strong>Message:</strong>
+  <%= @rsvp.message %>
+</p>
+
+<p>
+  <strong>Count:</strong>
+  <%= @rsvp.count %>
+</p>
+
+<%= link_to 'Edit', edit_rsvp_path(@rsvp) %> |
+<%= link_to 'Back', rsvps_path %>
