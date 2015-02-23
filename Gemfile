@@ -43,3 +43,5 @@ group :development, :test do
   gem 'spring'
 end
 
+# To allow Cross-Origin Resource Sharing
+gem 'rack-cors', :require => 'rack/cors'
