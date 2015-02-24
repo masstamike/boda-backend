@@ -8,14 +8,14 @@ Bundler.require(*Rails.groups)
 
 module Boda
   class Application < Rails::Application
-    config.active_record.raise_in_transactional_callbacks = true
-    config.middleware.use Rack::Cors do
+#    config.active_record.raise_in_transactional_callbacks = true
+
+    config.middleware.insert_before 0, Rack::Cors do
       allow do
         origins '*'
         resource '*',
         :headers => :any,
-        :methods => [:get, :put, :patch, :options],
-        :max_age => 15
+        :methods => [:get, :post, :put, :patch, :options]
       end
     end
   end
