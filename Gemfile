@@ -46,3 +46,4 @@ end
 # To allow Cross-Origin Resource Sharing
 gem 'rack-cors', :require => 'rack/cors'
 gem 'angular_rails_csrf'
+gem 'seed_dump'
