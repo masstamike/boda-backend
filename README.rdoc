@@ -1,2 +1,0 @@
-==Must Change
--localhost in config/application.rb to whever front-end lives.
